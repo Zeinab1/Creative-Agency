@@ -1,0 +1,22 @@
+/*About Section*/
+
+.about-item {
+  padding: 50px 20px;
+  text-align: center;
+  margin: 15px 0;
+}
+.about-title {
+  transition: color 0.2s;
+}
+.about-item:hover .about-title {
+  color: white;
+}
+.about-item i {
+  color: #0ed3f3;
+}
+.about-item-readmore {
+  color: #0ed3f3;
+}
+.test {
+  background-color: red;
+}

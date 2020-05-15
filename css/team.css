@@ -1,0 +1,42 @@
+/* 3.10 Team  section*/
+.team-item {
+  background-color: #f4f4f4;
+  margin: 15px 0;
+}
+.team-item-content {
+  padding: 40px 20px 20px 20px;
+  text-align: center;
+  font-size: 0;
+}
+.team-item-overlay {
+  background-color: rgb(28, 29, 33, 0.5);
+  visibility: hidden;
+  opacity: 0;
+}
+.team-item-overlay a {
+  display: block;
+  margin-left: auto;
+}
+.team-item-info {
+  text-align: center;
+  padding-bottom: 40px;
+}
+.team-item-name {
+  transition: color 0.3s;
+}
+.team-item-job {
+  transition: color 0.3s;
+}
+.team-item.ttb-effect:hover {
+  z-index: 2;
+}
+.team-item:hover .team-item-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+.team-item:hover .team-item-name {
+  color: #fff;
+}
+.team-item:hover .team-item-job {
+  color: #0ed3f3;
+}

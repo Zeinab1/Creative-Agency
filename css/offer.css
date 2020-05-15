@@ -1,0 +1,18 @@
+/* 3.5 Offer section */
+
+.offer-item {
+  padding: 40px 20px 40px 70px;
+  margin: 15px 0;
+  height: 285px;
+}
+.offer-item i {
+  left: 20px;
+  text-align: center;
+  color: #0ed3f3;
+}
+.offer-title {
+  transition: color 0.2s;
+}
+.offer-item:hover .offer-title {
+  color: #fff;
+}

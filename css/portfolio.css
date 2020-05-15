@@ -1,0 +1,68 @@
+/* 4-Portfolio */
+.portfolio {
+  background: #f9f9f9;
+}
+.portfolio-item {
+  padding: 20px; 
+}
+.portfolio-item .overlay-layer {
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.8s, visibility 0.8s;
+}
+.portfolio-item:hover .overlay-layer {
+  opacity: 1;
+  visibility: visible;
+}
+.portfolio-item .overlay-layer .overlay-content {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 70%;
+}
+.overlay-content-category {
+  color: #0ed3f3;
+  display: block; /* Solve problem margin becouse span is inline element,and don't use margin*/
+  top: 10px;
+  transition: opacity 0.1s, top 0.1s;
+  opacity: 0;
+}
+.overlay-content-title {
+  color: #fff;
+  top: 20px;
+  transition: top 0.1s, opacity 0.1s;
+  transition-delay: 0.1s;
+  opacity: 0;
+}
+.overlay-content a {
+  margin-right: 3px;
+  top: 10px;
+  transition: top 0.1s, opacity 0.1s;
+  transition-delay: 0.2s;
+  opacity: 0;
+  bottom: 0;
+  display: inline-block; /* we use this becouse <a> anchor is inline element , and width or height don't work with inline*/
+}
+.portfolio-item:hover .overlay-content-category,
+.portfolio-item:hover .overlay-content-title,
+.portfolio-item:hover .overlay-content a {
+  opacity: 1;
+  top: 0;
+}
+.portfolio-item:not(:hover) .overlay-content-category {
+  transition-delay: 0.5s;
+}
+.portfolio-item:not(:hover) .overlay-content-title {
+  transition-delay: 0.3s;
+  top: 30px;
+}
+.portfolio-item:not(:hover) .overlay-content a {
+  top: 40px;
+}
+@media only screen and (max-width: 480px) {
+  #portfolio [class*="col-xs"] {
+    width: 100%;
+  }
+}

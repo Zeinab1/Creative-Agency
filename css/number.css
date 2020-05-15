@@ -1,0 +1,31 @@
+/* 3.7 Numbers section */
+#numbers {
+}
+.section {
+  position: relative;
+}
+.sm-padding {
+  padding-top: 60px !important;
+
+  padding-bottom: 60px;
+}
+
+.number-item {
+  text-align: center;
+  margin: 15px 0;
+}
+.number-item i {
+  color: #0ed3f3;
+}
+.number-title {
+  font-size: 36px;
+  color: #fff;
+}
+.number-desc {
+  color: #fff;
+}
+@media only screen and (max-width:480px){
+  #numbers [class*= col-xs]{
+    width: 100%;
+  }
+}

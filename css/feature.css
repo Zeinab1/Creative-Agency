@@ -1,0 +1,28 @@
+/* 3.6 feature section */
+.feature {
+  background: #f9f9f9;
+}
+.row{
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.feature .section-header {
+  text-align: left;
+}
+.feature .section-header .line {
+  margin: 10px 0 50px 0;
+}
+.feature-left ul li {
+  color: #868f9b;
+  margin: 15px 0;
+}
+.feature-left i {
+  color: #0ed3f3;
+  border: 1px solid #0ed3f3;
+  border-radius: 50%;
+  padding: 5px;
+  margin-right: 5px;
+}
+.feature-right img {
+  width: 100% !important;
+}

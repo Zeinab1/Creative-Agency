@@ -1,0 +1,187 @@
+/*
+1-how refactor this code
+    1-utils
+    2-divide every section's style in a single file
+    3-make every 
+
+*/
+
+/*
+    1-Common Styles
+    2-General Styles
+    3-Sections
+        3.1 Header section
+        3.2 Home section
+        3.3 About section
+        3.4 Portfolio section
+        3.5 Offer section
+        3.6 feature section (why choose us)
+        3.7 Numbers section
+        3.8 Pricing section
+        3.9 Testmonials section
+        3.10 Team section
+        3.11 Blog section
+        3.12 Contact section
+        3.13 Footer section
+*/
+
+/*1- Common Styles  #0ed3f3*/
+/*
+   1-Clear
+   2-Container
+   3-Overlay
+   4-Hover Opacity
+   5-Section Header
+   6-LTR-Effect
+   7-TTB-Effect
+*/
+
+/* 1-Clear*/
+.clear {
+  clear: both;
+}
+/* 2-Container*/
+.container {
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+}
+
+/* 3-Overlay*/
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(28, 29, 33, 0.8);
+}
+/* 4-Hover Opacity*/
+.hover-opacity {
+  transition: opacity 0.1s;
+}
+.hover-opacity:hover {
+  opacity: 0.7;
+}
+/* 5-Section Header*/
+.pd-y {
+  padding: 120px 0;
+}
+.section-header {
+  text-align: center;
+}
+.section-header .section-title {
+  font-size: 36px;
+  color: #10161a;
+  opacity: 0.9;
+  text-transform: capitalize;
+  font-family: montserrat, sans-serif;
+}
+.section-header .line {
+  width: 50px;
+  height: 4px;
+  background-color: #0ed3f3;
+  margin: 10px auto 70px auto;
+}
+@media only screen and (max-width: 767px) {
+  .section-header .section-title {
+    font-size: 31px;
+  }
+}
+/* 6-LTR-Effect*/
+.ltr-effect {
+  position: relative;
+}
+.ltr-effect:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #333;
+  transition: width 0.3s;
+  z-index: -1;
+}
+.ltr-effect:hover:after {
+  width: 100%;
+}
+/*7-TTB-Effect*/
+.ttb-effect {
+  position: relative;
+}
+.ttb-effect:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  background: #333;
+  transition: height 0.3s;
+  z-index: -1;
+}
+.ttb-effect:hover:after {
+  height: 100%;
+}
+.bg-image {
+  position: absolute;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+/* 2-General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*css3*/
+  outline: none;
+}
+/* for every .title or p */
+html {
+  scroll-behavior: smooth;
+  text-size-adjust: 100%;
+}
+body {
+  font-family: varela round, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #868f9b;
+  min-height: 800px;
+}
+h3 {
+  font-family: montserrat, sans-serif;
+  font-size: 21px;
+  color: #10161a;
+  font-weight: 700;
+  margin-top: 0 !important;
+}
+a {
+  text-decoration: none !important;
+  cursor: pointer;
+}
+ul {
+  list-style: none;
+  margin: 0 !important;
+  padding: 0 !important;
+  /* margin-bottom: 0 !important; */
+}
+/* 3-Sections */

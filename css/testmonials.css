@@ -1,0 +1,44 @@
+/* 3.9 Testmonials section*/
+.testmonials {
+  position: relative;
+  /* background-size: cover;
+  background-attachment: fixed;
+  height: 400px;
+  padding: 120px 0; */
+}
+
+.testmonials-item {
+  color: #fff;
+}
+.testmonials-item-head {
+  padding: 10px 0 30px 90px;
+  position: relative;
+}
+.testmonials-item-head img {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  border-radius: 50%;
+}
+.testmonials-item-head .title {
+  font-size: 21px;
+  font-weight: 700px;
+  color: #fff;
+}
+.testmonials-item-head .job {
+  font-size: 14px;
+  color: #0ed3f3;
+}
+.testmonials-item-desc {
+  color: #fff;
+}
+@media (min-width: 768px) {
+  .testmonials-item {
+    padding: 120px 0;
+  }
+}
+@media (max-width: 768px) {
+  .testmonials-item {
+    margin: 15px 0;
+  }
+}

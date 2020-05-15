@@ -1,0 +1,23 @@
+/* 3.13 Footer section */
+.footer {
+  background-color: rgb(28, 29, 33);
+  padding: 60px 0;
+}
+.footer-content {
+  text-align: center;
+}
+.footer-list {
+  margin: 20px 0;
+}
+.footer-list li {
+  display: inline-block;
+}
+.footer-list a {
+  display: block;
+  margin-right: 10px;
+  margin-bottom: 13px;
+  border-radius: 3px;
+}
+.copyright {
+  color: #fff;
+}

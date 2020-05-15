@@ -1,0 +1,66 @@
+.overflow-hidden {
+  overflow: hidden;
+}
+.mg-b-5 {
+  margin-bottom: 5px;
+}
+.mg-b-10 {
+  margin-bottom: 10px;
+}
+.mg-b-20 {
+  margin-bottom: 20px;
+}
+.mg-b-30 {
+  margin-bottom: 30px;
+}
+.mg-b-40 {
+  margin-bottom: 40px;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.wh-img {
+  width: 100%;
+  height: 100%;
+}
+.absolute {
+  position: absolute;
+}
+.absolute-wh {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.relative {
+  position: relative;
+}
+.float-left {
+  float: left;
+}
+.border {
+  border: 1px solid #eee;
+}
+.mg-lr-2 {
+  margin: 0 2%;
+}
+.mg-lr-3 {
+  margin: 0 3%;
+}
+.i-size-36 {
+  font-size: 36px;
+}
+.a-inc-icon {
+  color: #fff;
+  line-height: 50px; /* to make <i> center from top and left for <a>*/
+  width: 50px;
+  height: 50px;
+  font-size: 14px;
+  background-color: #0ed3f3;
+}
+.icon-wh {
+  color: #fff;
+}
